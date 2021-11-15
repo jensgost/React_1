@@ -1,6 +1,11 @@
+import { MyFirstComponent } from "./MyFirstComponent";
+
 function App() {
   return (
-  <h1>Jens</h1>
+    <div>
+      <h1>Jens</h1>
+      <MyFirstComponent />
+    </div>
   );
 }
 
