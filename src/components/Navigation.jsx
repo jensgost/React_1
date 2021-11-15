@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
+import RoutingPath from "../routes/RoutingPath";
 
 export const Navigation = () => {
   const navigate = useNavigate();
 
   return (
     <div>
-      <p onClick={() => navigate("/home")}>Home</p>
-      <p onClick={() => navigate("/movies")}>Movies</p>
+      <p onClick={() => navigate(RoutingPath.homeView)}>Home</p>
+      <p onClick={() => navigate(RoutingPath.moviesView)}>Movies</p>
     </div>
   );
 };
