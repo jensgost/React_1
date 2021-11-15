@@ -1,4 +1,9 @@
 // kortkommando: _rafc
-export const MyFirstComponent = () => {
-  return <h1>This is my first component</h1>;
+export const MyFirstComponent = ({ name, age }) => {
+  return (
+    <div>
+      <h1>My name is {name}</h1>
+      <p>I am {age} years old</p>
+    </div>
+  );
 };
